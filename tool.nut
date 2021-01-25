@@ -8,7 +8,9 @@ function do_work(player, start, end) {
 	}
 	local base_station_name = base_station.get_name()
 	local vanish_station_name = vanish_station.get_name()
-	if(base_station_name == vanish_station_name){
+	local base_station_owner = base_station.get_owner().get_name()
+	local vanish_station_owner = vanish_station.get_owner().get_name()
+	if(base_station_name == vanish_station_name && base_station_owner == vanish_station_owner){
 		return "Same station!!"
 	}
 	local err = command_x(tool_merge_stop).work(player, start, end,"")
