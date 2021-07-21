@@ -1,0 +1,6 @@
+title=safe_merge_station
+type=two_click
+tooltip=Marge stop safely（安全に駅を統合）
+restart=1
+menu=general_tool[41]
+icon=safe_merge_station
